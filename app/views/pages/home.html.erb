@@ -1,0 +1,9 @@
+<h1>Pages#home</h1>
+<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container">
+  <div class="row">
+    <% @pins.each do |pin|  %>
+      <%= render 'pages/card', pin:pin %>
+    <% end %>
+  </div>
+</div>

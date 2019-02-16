@@ -1,0 +1,7 @@
+<div class="container">
+	<div class="row">
+		<% @pins.each do |pin| %>
+		   <%= render 'pins/card', pin: pin %>
+		<% end %>
+	</div>
+</div>
